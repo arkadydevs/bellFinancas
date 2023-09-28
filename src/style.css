@@ -1,0 +1,91 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.caixa {
+    background-color: #11114e;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 120px; 
+}
+
+
+.caixa h1{
+    color:beige;
+    text-align: center;
+    font-size: 50px;
+}  
+
+.bellMascote {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: beige;
+
+}
+
+.bellMascote img {
+    margin: 50px;
+    width: 400px;
+}
+.botoes{
+    background-color: beige;
+    outline-offset: 0;
+    display: flex;
+    height: 1000px;
+    justify-content: center; /* Alinha horizontalmente ao centro */
+}
+
+.botoes button {
+    background: linear-gradient(70deg, #0d5b88, #11114e);
+    color: beige;
+    border: 0;
+    border-radius: 50px;
+    
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 80px;
+    width:400px;
+    font-size: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 10px 30px #0d5b88; 
+
+}
+
+.botoes button:hover{
+
+    background-color: #cee2f0; 
+    transform: scale(1.2);
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+
+    }
+}
+
+.logos{
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 60px 0;
+}
+.carroselLogos{
+    display: inline-block;
+    animation: 10s slide infinite linear;
+    
+}
+
+.carroselLogos img{
+    width: 60px;
+    margin: 0px 100px 50px;
+}
+
