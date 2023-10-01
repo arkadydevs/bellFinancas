@@ -74,15 +74,29 @@
 }
 
 .logos{
+    display: flex;
+    flex-direction: row;
     overflow: hidden;
     white-space: nowrap;
     padding: 60px 0;
 }
 .carroselLogos{
-    display: inline-block;
-    animation: 10s slide infinite linear;
+
+    display: flex;
+    flex-direction: row;
+    animation: 40s slide infinite linear;
     
 }
+.alinhamento-texto {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.alinhamento-texto span{
+    margin-bottom: 50px;
+    
+}
+
 
 .carroselLogos img{
     width: 60px;
