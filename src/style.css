@@ -52,8 +52,7 @@
     width:400px;
     font-size: 50px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0px 10px 30px #0d5b88; 
+    transition: background-color 0.3s ease, transform 0.5s ease;
 
 }
 
@@ -78,8 +77,18 @@
     flex-direction: row;
     overflow: hidden;
     white-space: nowrap;
-    padding: 60px 0;
+    font-weight: bold;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 80px;
+    background-color: rgba(255, 228, 196, 0.547);
+    
 }
+
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+  }
+  
 .carroselLogos{
 
     display: flex;
@@ -91,15 +100,31 @@
     display: flex;
     align-items: center;
     flex-direction: row;
+    border-left: 3px solid  #11114ecc; /* Adiciona uma linha divisória cinza */
+
+    margin-left: 50px;
+  
+
+  
 }
 .alinhamento-texto span{
-    margin-bottom: 50px;
+        margin-left: 10px; /* Adiciona espaço entre a imagem e o texto */
+
     
 }
 
 
 .carroselLogos img{
-    width: 60px;
-    margin: 0px 100px 50px;
+    width: 50px;
+    margin: 50px 50px 50px;
 }
 
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+/* Adicione este estilo para pausar a animação quando a classe "paused" estiver presente */
+.paused .logos-slide {
+    animation-play-state: paused;
+}
