@@ -24,18 +24,25 @@
     padding-top: 30px;
     background-color: #000;
     box-shadow: 0 0 20px #00ff5e84;
-    padding-right: 320px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.botoes {    
+.bellMascote img{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.botoes { 
     background-color: #000; 
     padding: 40px;
     outline-offset: 0;
     display: flex;
-    height: 280px;
+    height: 190px;
     justify-content: center;
     padding-top: 60px;
 }
@@ -115,4 +122,46 @@
 .carroselLogos img {
     width: 40px;
     margin: 30px 30px 30px;
+}
+
+.github{
+    height: 200px;
+    background: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 1s ease, transform 1s ease;
+}
+
+.github img{
+    margin: 30px;
+    height: 120px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.github img:hover {
+    box-shadow: 0 0 40px #00a2ff;
+    transition: 600ms;
+    transform: scale(1.25);
+}
+
+.colaboradores{
+    box-shadow: 0 0 20px #06d050;
+    background: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.colaboradores span{
+    
+    color: beige;
+    margin: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
