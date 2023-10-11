@@ -16,6 +16,8 @@ function carroselDados(url, nomeElemento) {
             const timeSeries = data['Time Series (Daily)'];
             const dadosDiaAnterior = timeSeries[dataDiaAnterior];
 
+
+
             if (dadosDiaAnterior) {
                 const closePrice = dadosDiaAnterior['4. close'];
                 const closePriceArredondadoAnterior = Number(closePrice).toFixed(2);
@@ -29,7 +31,7 @@ function carroselDados(url, nomeElemento) {
 
                         // Compare o valor de hoje com o valor do dia anterior
                         if (closePriceArredondado < closePriceArredondadoAnterior) {
-                            element.style.color = 'red'; // Defina a cor do texto como vermelho
+                            element.style.color = 'red'; 
                         }
 
                         element.textContent = `${nomeElemento}: $${closePriceArredondado}`;
