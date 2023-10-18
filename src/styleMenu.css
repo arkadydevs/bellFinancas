@@ -26,13 +26,13 @@
     font-size: 40px;
     font-family: 'Pixelify Sans', sans-serif;
     
-    } 
+} 
 
 .textArea {
     padding-top: 10px;
     background-color: #ae88e0;
     box-shadow: 0 0 20px #dfafff;
-    height: 300px;
+    height: 600px;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -60,7 +60,7 @@
 }
 
 .botoes { 
-    background-color: #000; 
+    background-color: #9688e0; 
     padding: 40px;
     outline-offset: 0;
     display: flex;
