@@ -1,20 +1,81 @@
-<!DOCTYPE html>
-<html> 
-<head>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pixelify+Sans:wght@500&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bell Finanças </title>
-    <link rel="icon" type="image/png" href="logos/icon.png">
-    <link rel="stylesheet" href="styleRendaFixa.css">
-  
-</head>
-<body>
-    <div class="caixa">
-        <p></p>
-        <h1 class="titulo">Renda Fixa</h1>
-    </div>
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: 'Pixelify Sans', sans-serif;
+    box-sizing: border-box;
+}
 
 
+.caixa {
+    background: linear-gradient(90deg,  #9688e0, #eba9c2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+}
 
-</body>
-</html>
+.caixa h1{
+    color: rgb(255, 248, 190);
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Pixelify Sans', sans-serif;
+    
+} 
+
+.acoesFixas{
+    background-color: #eba9c2;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.acoesFixas button{
+    height: 40px;
+    width: 120px;
+    background-color: #eba9c200;
+    margin: 0px 50px 50px 50px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.acoesFixas button:hover {
+    transition: background 700ms ease, transform 700ms ease;
+    transform: scale(1.30);
+}
+
+.acoesFixas img{
+    height: 30px;
+}
+
+.poupanca{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: beige;
+    font-weight: bold;
+}
+
+.cdb{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: beige;
+    font-weight: bold;
+}
+
+
+.lci{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: beige;
+    font-weight: bold;
+}
