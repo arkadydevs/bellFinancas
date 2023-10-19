@@ -1,4 +1,4 @@
-const urlMicrosoft = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=MSFT&interval=5min&apikey=VJ3VUIZPVMBRLTP5';
+/*const urlMicrosoft = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=MSFT&interval=5min&apikey=VJ3VUIZPVMBRLTP5';
 const urlApple = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=AAPL&interval=5min&apikey=VJ3VUIZPVMBRLTP5';
 const urlIBM = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=IBM&interval=5min&apikey=VJ3VUIZPVMBRLTP5';
 
@@ -56,7 +56,7 @@ urls.forEach(({ url, nomeElemento }) => {
     carroselDados(url, nomeElemento);
 });
 
-
+*/
 const botaoAna = document.getElementById("gitAna");
 botaoAna.addEventListener("click", function() {
     window.open("https://github.com/tiredmoth", "_blank");

@@ -60,7 +60,7 @@
 }
 
 .botoes { 
-    background-color: #9688e0; 
+    background-color: #ae88e0; 
     padding: 40px;
     outline-offset: 0;
     display: flex;
@@ -91,8 +91,9 @@
 
 .botoes button:hover {
     color: rgb(255, 248, 190);
-    background: linear-gradient(160deg, #06af44, #179ce3);
-    box-shadow: 0 0 30px #00ff5f;
+    background: linear-gradient(90deg,  #9688e0, #eba9c2);
+    box-shadow: 0 0 30px #eba9c2;
+    color: rgb(0, 0, 0);
     transition: 300ms;
     transform: scale(1.1);
 }
@@ -148,7 +149,7 @@
 
 .github{
     height: 280px;
-    background: #111111;
+    background: #864ad5;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -172,7 +173,7 @@
 
 .github button:hover {
     transition: background 700ms ease, transform 700ms ease;
-    box-shadow: 0 0 40px #179ce3;
+    box-shadow: 0 0 40px #ffeaaf;
     transform: scale(1.30);
 }
 
@@ -182,8 +183,8 @@
 }
 
 .colaboradores{
-    box-shadow: 0 0 20px #06d050;
-    background: #111111;
+    box-shadow: 0 0 20px #ffeaaf;
+    background: #864ad5;
     display: flex;
     align-items: center;
     justify-content: center;
