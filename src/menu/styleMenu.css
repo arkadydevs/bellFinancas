@@ -72,8 +72,7 @@
 .botoes button {
     background: #000000;
     color: beige;
-    border-radius: 50px;
-    border-image: linear-gradient(160deg, #06af44, #179ce3);
+    border-radius: 30px;
     border: solid;
     border-image-slice: 5;
     box-sizing: border-box;
@@ -91,7 +90,7 @@
 
 .botoes button:hover {
     color: rgb(255, 248, 190);
-    background: linear-gradient(90deg,  #9688e0, #eba9c2);
+    background: linear-gradient(90deg,  #fff8be, #eba9c2);
     box-shadow: 0 0 30px #eba9c2;
     color: rgb(0, 0, 0);
     transition: 300ms;
