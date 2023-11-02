@@ -22,7 +22,7 @@
     
 } 
 
-.acoesFixas{
+.rendaFixa{
     background-color: #eba9c2;
     height: 120px;
     display: flex;
@@ -30,52 +30,184 @@
     justify-content: center;
 }
 
-.acoesFixas button{
+.rendaFixa button{
     height: 40px;
     width: 120px;
     background-color: #eba9c200;
     margin: 0px 50px 50px 50px;
     border: none;
     cursor: pointer;
+    font-size: 20px;
+
     
 }
 
-.acoesFixas button:hover {
+.rendaFixa button:hover {
     transition: background 700ms ease, transform 700ms ease;
     transform: scale(1.30);
 }
 
-.acoesFixas img{
-    height: 30px;
+.rendaFixa button:not(:hover) {
+    transition: box-shadow 700ms ease, transform 700ms ease;
+    transform: scale(1);
 }
 
-.poupanca{
+
+
+.rendaFixa img{
+    margin-top: 30px;
+    height: 45px;
+}
+
+.LCIButtonDiv{
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: beige;
     font-weight: bold;
 }
 
-.cdb{
+.LCAButtonDiv{
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: beige;
     font-weight: bold;
 }
 
-
-.lci{
+.CBDButtonDiv{
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: beige;
     font-weight: bold;
 }
+
+.PoupançaButtonDiv{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.menuRendaFixa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1700px;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.menuRendaFixa img {
+    width: 200px;
+    height: 200px;
+    animation: moveUpDown 8s linear infinite;
+}
+.LCI {
+    width: 100%;
+    height: 1700px;
+    background-color: #ae88e0;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.LCA{
+    width: 100%;
+    height: 1700px;
+    background-color: #ae88e0;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.CBD{
+    width: 100%;
+    height: 1700px;
+    background-color: #ae88e0;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.Poupança{
+    width: 100%;
+    height: 1700px;
+    background-color: #ae88e0;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+
+.textoLCI {
+    height: 1600px;
+    width: 800px;
+    border-radius: 20px;
+    background-color: #fff8be;
+    box-shadow: 0 0 20px #eba9c2;
+    margin: 50px 0px 0px 35%;
+    padding: 10px;
+    align-items: center; 
+    justify-content: center; 
+    text-align: justify; 
+
+}
+
+.textoLCA{
+    height: 1200px;
+    width: 800px;
+    border-radius: 20px;
+    background-color: #fff8be;
+    box-shadow: 0 0 20px #eba9c2;
+    margin: 50px 0px 0px 35%;
+    padding: 10px;
+    align-items: center; 
+    justify-content: center; 
+    text-align: justify; 
+}
+
+.textoCBD{
+    height: 1200px;
+    width: 800px;
+    border-radius: 20px;
+    background-color: #fff8be;
+    box-shadow: 0 0 20px #eba9c2;
+    margin: 50px 0px 0px 35%;
+    padding: 10px;
+    align-items: center; 
+    justify-content: center; 
+    text-align: justify; 
+}
+
+.textoPoupança{
+    height: 1200px;
+    width: 800px;
+    border-radius: 20px;
+    background-color: #fff8be;
+    box-shadow: 0 0 20px #eba9c2;
+    margin: 50px 0px 0px 35%;
+    padding: 10px;
+    align-items: center; 
+    justify-content: center; 
+    text-align: justify; 
+}
+
