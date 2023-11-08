@@ -1,4 +1,5 @@
-/*const urlMicrosoft = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=MSFT&interval=5min&apikey=VJ3VUIZPVMBRLTP5';
+/*
+const urlMicrosoft = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=MSFT&interval=5min&apikey=VJ3VUIZPVMBRLTP5';
 const urlApple = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=AAPL&interval=5min&apikey=VJ3VUIZPVMBRLTP5';
 const urlIBM = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=IBM&interval=5min&apikey=VJ3VUIZPVMBRLTP5';
 
@@ -76,4 +77,11 @@ botaoJoao.addEventListener("click", function() {
 const botaoMariana = document.getElementById("gitMariana");
 botaoMariana.addEventListener("click", function() {
     window.open("https://github.com/MarianaMegumi", "_blank");
+});
+
+const bellMascot = document.getElementById("acoes")
+const span = document.getElementById("spanMascot")
+
+bellMascot.addEventListener('click', () => {
+    document.querySelector(span).textContent = "Mudou o texto!";
 });
