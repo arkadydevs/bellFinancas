@@ -39,6 +39,48 @@
 
 }
 
+.textArea button{
+    height: 484px;
+    width: 350px;
+    background: url(logos/bell.png) no-repeat;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+
+.textArea img{
+    height: 484px;
+    width: 350px;
+    margin-left: 25px;
+    background: url(logos/bell.png) no-repeat;
+    animation: moveUpDown 2s linear infinite;
+    transition: transform 1s ease;
+
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.textArea button:hover {
+    transition: 300ms;
+    transform: scale(1.2);
+}
+
+.textArea button:not(:hover) {
+    transition: 300ms;
+    transform: scale(1);
+}
 .quadradoTexto span{
     color: #3e2b6b;
     font-size: 20px;
@@ -58,6 +100,21 @@
     text-align: center;
 
 }
+
+.quadradoTexto:after{
+    content: "";
+    width: 0; 
+    height: 0;
+    position: absolute;
+    right: 650px;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 50px solid #c3b6d4;
+    border-radius: 50%;
+
+}
+
+
 
 .botoes { 
     background-color: #ae88e0; 
