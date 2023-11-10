@@ -48,16 +48,13 @@
 
 }
 
-
-
-.textArea img{
+.textArea img {
     height: 484px;
     width: 350px;
     margin-left: 25px;
     background: url(logos/bell.png) no-repeat;
     animation: moveUpDown 2s linear infinite;
     transition: transform 1s ease;
-
 }
 
 @keyframes moveUpDown {
@@ -71,6 +68,9 @@
         transform: translateY(0);
     }
 }
+
+
+
 
 .textArea button:hover {
     transition: 300ms;
@@ -90,7 +90,7 @@
 
 .quadradoTexto{
     background-color: #c3b6d4;
-    height: 300px;
+    height: 200px;
     width: 900px;
     box-shadow: 0 0 20px #ffeaaf;
     border-radius: 10px;
@@ -127,8 +127,10 @@
 }
 
 .botoes button {
-    background: #000000;
+    background: #ae88e0;
     color: beige;
+    box-shadow: 0 0 10px beige;
+
     border-radius: 30px;
     border: solid;
     border-image-slice: 5;
@@ -139,7 +141,6 @@
     height: 80px;
     width: 400px;
     font-size: 40px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     cursor: pointer;
     font-weight: bold;
     transition: background 1s ease, transform 1s ease;
@@ -148,8 +149,8 @@
 .botoes button:hover {
     color: rgb(255, 248, 190);
     background: linear-gradient(90deg,  #fff8be, #eba9c2);
-    box-shadow: 0 0 30px #eba9c2;
-    color: rgb(0, 0, 0);
+    box-shadow: 0 0 60px #eba9c2;
+    color: #ae88e0;
     transition: 300ms;
     transform: scale(1.1);
 }
@@ -205,13 +206,24 @@
 
 .github{
     height: 280px;
-    background: #864ad5;
+    background: #c3b6d4;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.bellEscondido {
+    position: fixed;
+    height: 200px;
+    left: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 999;
+    transform: rotate(20deg);
+    overflow: hidden; 
+}
 
 .github button{
+    position: relative;
     margin: 30px;
     height: 140px;
     border-radius: 50%;
@@ -240,7 +252,7 @@
 
 .colaboradores{
     box-shadow: 0 0 20px #ffeaaf;
-    background: #864ad5;
+    background: #c3b6d4;
     display: flex;
     align-items: center;
     justify-content: center;

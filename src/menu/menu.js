@@ -78,10 +78,67 @@ const botaoMariana = document.getElementById("gitMariana");
 botaoMariana.addEventListener("click", function() {
     window.open("https://github.com/MarianaMegumi", "_blank");
 });
+var falaNum = 0;
 
-const bellMascot = document.getElementById("acoes")
-const span = document.getElementById("spanMascot")
+function mudarFala() {
+    var spanElement = document.getElementById("spanMascot");
+    var bellImage = document.getElementById("bellImagem");
+    var texto = spanElement.textContent || "..."; 
 
-bellMascot.addEventListener('click', () => {
-    document.querySelector(span).textContent = "Mudou o texto!";
+    if (spanElement.textContent !== texto) {
+        return;
+    }
+
+    if (falaNum === 1) {
+        texto = "Muito prazer! Meu nome é Bell, o dono desse incrível site, e hoje eu lhe ensinarei e o guiarei pelo caminho seguro dos investimentos!";
+        bellImage.src = "/src/logos/bell2.png"; 
+        falaNum++;
+    } else if (falaNum === 2) {
+        texto = "Vamos embarcar nessa!!??";
+        bellImage.src = "/src/logos/bell3.png"; 
+        falaNum = 0;
+    } else {
+        texto = "Olá! Bem-vindo ao nosso site!";
+        bellImage.src = "/src/logos/bell.png"; 
+        falaNum++;
+    }
+
+    document.getElementById("bellMascot").setAttribute("disabled", "disabled");
+
+    exibirCaracterPorCaracter(spanElement, texto);
+}
+
+function exibirCaracterPorCaracter(elemento, texto) {
+    elemento.textContent = ""; 
+    var i = 0;
+    var interval = setInterval(function () {
+        elemento.textContent += texto[i];
+        i++;
+        if (i === texto.length) {
+            clearInterval(interval);
+            document.getElementById("bellMascot").removeAttribute("disabled");
+        }
+    }, 50); 
+}
+document.addEventListener("DOMContentLoaded", function() {
+    var bellEscondido = document.getElementById('bellEscondido');
+    var bellImage = document.getElementById('bellImagem');
+
+    window.addEventListener('scroll', function() {
+        var triggerPosition = window.innerHeight; // Ou qualquer valor que você preferir
+        var scrollPosition = window.scrollY;
+
+        if (scrollPosition > triggerPosition) {
+            var opacity = 1 - (scrollPosition - triggerPosition) / 200; // Ajuste conforme necessário
+
+            // Garante que a opacidade não seja menor que 0
+            opacity = Math.max(0, opacity);
+
+            bellEscondido.style.bottom = '10px'; // Ou qualquer valor que você preferir
+            bellImage.style.opacity = opacity.toFixed(2); // Define a opacidade com duas casas decimais
+        } else {
+            bellEscondido.style.bottom = '-200px'; // Mantém abaixo da tela
+            bellImage.style.opacity = '1'; // Restaura a opacidade total
+        }
+    });
 });
