@@ -162,6 +162,108 @@
     to {
         transform: translateX(-100%);
     }
+
+}
+
+.pregao {
+    box-shadow: 0 0 60px #eba9c2;
+    background: #eba9c2;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.propagandaPregao {
+    height: 280px;
+    background-color: #eba9c2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.pregao span{
+    color: beige;
+    margin: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Pixelify Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.repositorio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    width: 500px;
+    background-color: #eba9c2;
+}
+
+.repositorio img{
+    box-shadow: 0 0 10px  #3e2b6b;
+}
+
+.bellRepositorio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 600px;
+
+    background-color: #eba9c2;
+}
+.bellRepositorio img{
+    height: 260px;
+    animation: moveUpDown 2s linear infinite;
+
+}
+
+
+
+.falaPropaganda{
+    height:100px;
+    width: 700px;
+    background-color: #c3b6d4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px #ffeaaf;
+
+
+}
+
+
+
+.repositorio a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3e2b6b;
+    transition: 1s; 
+}
+
+.repositorio img {
+    height: 200px;
+    border-radius: 20px;
+}
+
+.repositorio button {
+    border: none;
+    background: none;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.repositorio:hover button {
+    transform: scale(1.05);
+}
+
+.repositorio:hover a {
+    font-size: 27px; 
 }
 
 .logos {
@@ -212,7 +314,6 @@
     justify-content: center;
 }
 .bellEscondido {
-    position: fixed;
     height: 200px;
     left: 10px;
     padding: 10px;
@@ -220,6 +321,7 @@
     z-index: 999;
     transform: rotate(20deg);
     overflow: hidden; 
+    
 }
 
 .github button{
@@ -251,7 +353,7 @@
 }
 
 .colaboradores{
-    box-shadow: 0 0 20px #ffeaaf;
+    box-shadow: 0 0 60px #c3b6d4;
     background: #c3b6d4;
     display: flex;
     align-items: center;

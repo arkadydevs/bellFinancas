@@ -120,25 +120,6 @@ function exibirCaracterPorCaracter(elemento, texto) {
         }
     }, 50); 
 }
-document.addEventListener("DOMContentLoaded", function() {
-    var bellEscondido = document.getElementById('bellEscondido');
-    var bellImage = document.getElementById('bellImagem');
 
-    window.addEventListener('scroll', function() {
-        var triggerPosition = window.innerHeight; // Ou qualquer valor que você preferir
-        var scrollPosition = window.scrollY;
 
-        if (scrollPosition > triggerPosition) {
-            var opacity = 1 - (scrollPosition - triggerPosition) / 200; // Ajuste conforme necessário
 
-            // Garante que a opacidade não seja menor que 0
-            opacity = Math.max(0, opacity);
-
-            bellEscondido.style.bottom = '10px'; // Ou qualquer valor que você preferir
-            bellImage.style.opacity = opacity.toFixed(2); // Define a opacidade com duas casas decimais
-        } else {
-            bellEscondido.style.bottom = '-200px'; // Mantém abaixo da tela
-            bellImage.style.opacity = '1'; // Restaura a opacidade total
-        }
-    });
-});
