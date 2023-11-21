@@ -1,7 +1,9 @@
-/*
+
 const urlMicrosoft = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=MSFT&interval=5min&apikey=VJ3VUIZPVMBRLTP5';
 const urlApple = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=AAPL&interval=5min&apikey=VJ3VUIZPVMBRLTP5';
 const urlIBM = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=IBM&interval=5min&apikey=VJ3VUIZPVMBRLTP5';
+const urlNIKE = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=NKE&interval=5min&apikey=VJ3VUIZPVMBRLTP5';
+const urlAMAZON = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=AMZN&interval=5min&apikey=VJ3VUIZPVMBRLTP5';
 
 function carroselDados(url, nomeElemento) {
     fetch(url)
@@ -51,13 +53,15 @@ const urls = [
     { url: urlMicrosoft, nomeElemento: "valor-da-microsoft" },
     { url: urlIBM, nomeElemento: "valor-da-ibm" },
     { url: urlApple, nomeElemento: "valor-da-apple" },
+    { url: urlNIKE, nomeElemento: "valor-da-nike" },
+    { url: urlAMAZON, nomeElemento: "valor-da-amazon" }
+
 ];
 
 urls.forEach(({ url, nomeElemento }) => {
     carroselDados(url, nomeElemento);
 });
 
-*/
 const botaoAna = document.getElementById("gitAna");
 botaoAna.addEventListener("click", function() {
     window.open("https://github.com/tiredmoth", "_blank");

@@ -101,18 +101,6 @@
 
 }
 
-.quadradoTexto:after{
-    content: "";
-    width: 0; 
-    height: 0;
-    position: absolute;
-    right: 650px;
-    border-top: 50px solid transparent;
-    border-bottom: 50px solid transparent;
-    border-left: 50px solid #c3b6d4;
-    border-radius: 50%;
-
-}
 
 
 
