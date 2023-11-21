@@ -1,4 +1,4 @@
-
+/*
 const urlMicrosoft = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=MSFT&interval=5min&apikey=VJ3VUIZPVMBRLTP5';
 const urlApple = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=AAPL&interval=5min&apikey=VJ3VUIZPVMBRLTP5';
 const urlIBM = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=IBM&interval=5min&apikey=VJ3VUIZPVMBRLTP5';
@@ -32,7 +32,6 @@ function carroselDados(url, nomeElemento) {
                     elementos.forEach(element => {
                         const closePriceArredondado = closePriceAtual;
 
-                        // Compare o valor de hoje com o valor do dia anterior
                         if (closePriceArredondado < closePriceArredondadoAnterior) {
                             element.style.color = 'red'; 
                         }
@@ -45,6 +44,7 @@ function carroselDados(url, nomeElemento) {
             }
         })
         .catch(error => {
+            
             console.error('Erro ao buscar dados:', error);
         });
 }
@@ -60,7 +60,7 @@ const urls = [
 
 urls.forEach(({ url, nomeElemento }) => {
     carroselDados(url, nomeElemento);
-});
+});*/
 
 const botaoAna = document.getElementById("gitAna");
 botaoAna.addEventListener("click", function() {
@@ -83,46 +83,65 @@ botaoMariana.addEventListener("click", function() {
     window.open("https://github.com/MarianaMegumi", "_blank");
 });
 var falaNum = 0;
+var audioElement = new Audio('/src/audio/vozBell.mp3');
 
 function mudarFala() {
+    audioElement
     var spanElement = document.getElementById("spanMascot");
     var bellImage = document.getElementById("bellImagem");
-    var texto = spanElement.textContent || "..."; 
+    var texto = spanElement.textContent || "...";
 
     if (spanElement.textContent !== texto) {
         return;
     }
 
+    if (audioElement) {
+        audioElement.pause();
+        audioElement.currentTime = 0;
+    }
+
     if (falaNum === 1) {
-        texto = "Muito prazer! Meu nome é Bell, o dono desse incrível site, e hoje eu lhe ensinarei e o guiarei pelo caminho seguro dos investimentos!";
-        bellImage.src = "/src/logos/bell2.png"; 
+        texto = "Muito prazer! Meu nome é Bell, o dono desse incrível site! Hoje eu lhe ensinarei e o guiarei pelo caminho seguro dos investimentos!";
+        bellImage.src = "/src/logos/bell2.png";
         falaNum++;
+
+        audioElement.play();
     } else if (falaNum === 2) {
         texto = "Vamos embarcar nessa!!??";
-        bellImage.src = "/src/logos/bell3.png"; 
-        falaNum = 0;
+        bellImage.src = "/src/logos/bell3.png";
+        falaNum++;
+        audioElement.play();
+
     } else {
         texto = "Olá! Bem-vindo ao nosso site!";
-        bellImage.src = "/src/logos/bell.png"; 
-        falaNum++;
+        bellImage.src = "/src/logos/bell.png";
+        falaNum = 1;;
+
+        audioElement.play();
     }
 
     document.getElementById("bellMascot").setAttribute("disabled", "disabled");
 
-    exibirCaracterPorCaracter(spanElement, texto);
+    exibirCaracterPorCaracter(spanElement, texto, function () {
+        document.getElementById("bellMascot").removeAttribute("disabled");
+        audioElement.pause();
+        
+    });
 }
 
-function exibirCaracterPorCaracter(elemento, texto) {
-    elemento.textContent = ""; 
+function exibirCaracterPorCaracter(elemento, texto, callback) {
+    elemento.textContent = "";
     var i = 0;
     var interval = setInterval(function () {
         elemento.textContent += texto[i];
         i++;
         if (i === texto.length) {
             clearInterval(interval);
-            document.getElementById("bellMascot").removeAttribute("disabled");
+            if (callback) {
+                callback();
+            }
         }
-    }, 50); 
+    }, 50);
 }
 
 

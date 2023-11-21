@@ -70,12 +70,18 @@ function mudarFalaTras() {
     }
     spanElement.textContent = mapaTexto.get(numeroTexto);
     console.log(numeroTexto)
+    
     aTextoMudanca()
 }
 
 
 function aTextoMudanca(){
-    aElement.textContent = numeroTexto+1 + "/" + mapaTexto.size
+    if(mapaTexto.size > 0){
+        aElement.textContent = numeroTexto+1 + "/" + mapaTexto.size
+    }
+    else{
+        console.log("Nenhum tipo de ativo selecionado")
+    }
 
 }
 

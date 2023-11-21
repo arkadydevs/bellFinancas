@@ -186,7 +186,7 @@
     align-items: center;
     justify-content: center;
     height: 220px;
-    width: 500px;
+    width: 410px;
     background-color: #eba9c2;
 }
 
@@ -301,16 +301,7 @@
     align-items: center;
     justify-content: center;
 }
-.bellEscondido {
-    height: 200px;
-    left: 10px;
-    padding: 10px;
-    border-radius: 50%;
-    z-index: 999;
-    transform: rotate(20deg);
-    overflow: hidden; 
-    
-}
+
 
 .github button{
     position: relative;

@@ -30,10 +30,8 @@ function setAcoes(){
     mapaTexto.set(5, 'A International Business Machines Corporation (IBM), uma das mais antigas e respeitadas empresas de tecnologia, foi fundada em 1911 e é especializada em uma ampla gama de produtos, incluindo hardware, software, serviços de consultoria e soluções em nuvem. Suas ações são negociadas na New York Stock Exchange (NYSE) com o ticker "IBM." A IBM é renomada por sua produção de hardware para áreas de TI, como servidores, mainframes e sistemas de armazenamento, bem como por seus softwares, incluindo sistemas operacionais, ferramentas de desenvolvimento de aplicativos e soluções de análise de dados, como o IBM Watson Analytics. Além disso, a empresa oferece serviços de computação em nuvem, como a plataforma IBM Cloud e soluções de inteligência artificial em nuvem.Para avaliar o desempenho financeiro da IBM, é crucial considerar fatores do setor de tecnologia, como a privacidade e segurança dos dados dos usuários, a reputação da marca no mercado consumidor e a necessidade constante de inovação para se manter relevante em um mercado de rápida evolução.');
     spanElement.textContent = mapaTexto.get(numeroTexto);
     tipoRenda.textContent = "AÇÕES"
-
     aTextoMudanca()
 }
-
 
 function mudarFalaFrente() {
     numeroTexto++;
