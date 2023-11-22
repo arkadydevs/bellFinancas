@@ -62,17 +62,6 @@ function aTextoMudanca(){
 
 }
 
-function exibirCaracterPorCaracter(elemento, texto) {
-    elemento.textContent = ""; 
-    var i = 0;
-    var interval = setInterval(function () {
-        elemento.textContent += texto[i];
-        i++;
-        if (i === texto.length) {
-            clearInterval(interval);
-            document.getElementById("bellImagem").removeAttribute("disabled");
-        }
-    }, 50); 
-}
+
 
 
